@@ -1,7 +1,7 @@
 {
-  "name": "react-boilerplate",
+  "name": "react-todoapp",
   "version": "1.0.0",
-  "description": "react boilerplate with testing and webpack",
+  "description": "react todo app",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
