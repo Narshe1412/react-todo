@@ -1,7 +1,7 @@
 var React = require('react');
 
 var AddTodo = React.createClass({
-    handleOnClick: function(e) {
+    handleSubmit: function(e) {
         e.preventDefault();
 
         var todoText = this.refs.todoText.value;
@@ -9,15 +9,17 @@ var AddTodo = React.createClass({
         if(todoText.length > 0) {
             this.refs.todoText.value = "";
             
-            this.props.handleAddTodo(todoText);
+            this.props.onAddTodo(todoText);
+        } else {
+            this.refs.todoText.focus();
         }
     },
     render: function() {
         return(
             <div>
-                <form action="" onClick={this.handleOnClick}>
+                <form onSubmit={this.handleSubmit}>
                     <input type="text" ref="todoText" placeholder="New task To Do"/>
-                    <button className="button">Add Todo</button>
+                    <button className="button expanded">Add Todo</button>
                 </form>
             </div>
         )
