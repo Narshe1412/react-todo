@@ -31,7 +31,8 @@ module.exports = {
             applicationStyles: 'app/styles/app.scss',
             Todo: 'app/components/Todo.jsx',
             TodoApp: 'app/components/TodoApp.jsx',
-            TodoList: 'app/components/TodoList.jsx'
+            TodoList: 'app/components/TodoList.jsx',
+            AddTodo: 'app/components/AddTodo.jsx'
         },
         extensions: ['', '.js', '.jsx']
     },
