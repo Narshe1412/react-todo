@@ -15,7 +15,7 @@ describe('AddTodo', ()=>{
         var todoText ='Check mail';
         var spy = expect.createSpy();
         var addTodo = TestUtils.renderIntoDocument(<AddTodo onAddTodo={spy}/>);
-        var $el = $(ReactDOM.findDOMNode('addTodo'));
+        var $el = $(ReactDOM.findDOMNode(addTodo));
 
         addTodo.refs.todoText.value = todoText;
         TestUtils.Simulate.submit($el.find('form')[0]);
@@ -27,7 +27,7 @@ describe('AddTodo', ()=>{
         var todoText ='';
         var spy = expect.createSpy();
         var addTodo = TestUtils.renderIntoDocument(<AddTodo onAddTodo={spy}/>);
-        var $el = $(ReactDOM.findDOMNode('addTodo'));
+        var $el = $(ReactDOM.findDOMNode(addTodo));
 
         addTodo.refs.todoText.value = todoText;
         TestUtils.Simulate.submit($el.find('form')[0]);
