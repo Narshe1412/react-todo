@@ -3,7 +3,6 @@ var Todo = require('Todo');
 
 var TodoList = React.createClass({
     render: function(){
-        console.log(todos);
         var {todos} = this.props;
         var renderTodos = () => {
             return todos.map((todo) => {
