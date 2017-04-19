@@ -1,4 +1,4 @@
-var $ = require('jQuery');
+var $ = require('jquery');
 
 module.exports = {
     setTodos: function(todos){
@@ -30,6 +30,15 @@ module.exports = {
         //Filter by searchText
 
         //Sort todos with non-completed first
+        filteredTodos.sort((a,b) => {
+            if(a.completed === false && b.completed === true) { // !a.completed && b.completed
+                return -1;
+            } else if( a.completed && !b.completed) {
+                return 1;
+            } else {
+                return 0;
+            }
+        })
 
         return filteredTodos;
     }
