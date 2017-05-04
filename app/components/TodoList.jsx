@@ -28,8 +28,4 @@ export var TodoList = React.createClass({
     }
 });
 
-export default connect(
-    (state) => {
-        return state;
-    }
-)(TodoList);
+export default connect(state => state)(TodoList);

@@ -11,9 +11,9 @@ store.subscribe(()=>{
     console.log("new state", store.getState())
 })
 
-store.dispatch(actions.addTodo('clean a yard'));
-store.dispatch(actions.setSearchText('yard'));
-store.dispatch(actions.toggleShowCompleted());
+// store.dispatch(actions.addTodo('clean a yard'));
+// store.dispatch(actions.setSearchText('yard'));
+// store.dispatch(actions.toggleShowCompleted());
 
 //load foundation
 $(document).foundation();
